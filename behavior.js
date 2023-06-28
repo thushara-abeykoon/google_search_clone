@@ -16,6 +16,12 @@ textInput.onfocus = function () {
 
 textInput.onblur = function () {
     textBox.style.boxShadow = "none";
+    textBox.onmouseover = function () {
+        textBox.style.boxShadow = "0px 0px 5px 2px rgb(224, 224, 224)";
+    }
+    textBox.onmouseleave = function(){
+        textBox.style.boxShadow = "none";
+    }
 }
 
 textInput.oninput = function(){
