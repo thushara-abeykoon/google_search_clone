@@ -9,7 +9,7 @@
     padding: 3px;
     padding-right: 10px;
     margin: auto;
-    width: 45%;
+    width: 500px;
     margin-bottom: 20px;
 }
 
@@ -18,7 +18,7 @@
   }
 
 input[type=text]{
-    width: 450px;
+    width: 75%;
     border: none;
     outline: none;
     font-size: 16px;
@@ -40,10 +40,11 @@ input[type=text]{
 
 #slash{
     display: block;
-    margin-top: 0.2px;
-    font-size: 30px;
+    margin-top: auto;
+    font-size: 35px;
     margin-left:8px ;
     margin-right: 8px;
+    font-family: 'Courier New', Courier, monospace;
     color:rgb(223, 223, 223);
 }
 
@@ -101,4 +102,75 @@ input[type=text]{
 
 main{
     text-align: center;
+}
+
+main div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+}
+main div span{
+    margin: 5px;
+}
+
+main div span a{
+    text-decoration: none;
+}
+
+main div span a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+    background-color: rgb(241, 241, 241);
+    height: 90px;
+    position: absolute;
+    bottom: 5px;
+    width: 99%;
+}
+
+#footerTop{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 10px 20px;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+}
+footer ul li{
+    margin-left: 20px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+#footerBottom{
+    display: flex;
+}
+
+#footerLeft{
+    width: 55%;
+    display: block;
+}
+#footerRight{
+    width: 25%;
+    display: block;
+}
+#footerRightUl{
+    width: 0px;
+    float:right;
 }

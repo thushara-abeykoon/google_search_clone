@@ -25,3 +25,56 @@ textInput.oninput = function(){
     }
 
 }
+
+document.querySelector('footer').style.width = windowWidth();
+function windowWidth(){
+    var deviceWidth = window.innerWidth;
+    return deviceWidth;
+}
+
+window.addEventListener('resize',()=>{
+    let footerBottom = document.getElementById('footerBottom');
+    let footerLeft = document.getElementById('footerLeft');
+    let footerLeftUl = document.getElementById('footerLeftUl');
+    let footerRight = document.getElementById('footerRight');
+    let footerRightUl = document.getElementById('footerRightUl');
+    
+    if(windowWidth()<680){
+        footerBottom.style.display = 'block';
+        footerLeft.style.width= '100%'; 
+        footerRight.style.width= '100%';
+        footerLeftUl.style.margin= 'auto'; 
+        footerLeftUl.style.marginTop= '20px'; 
+        footerLeftUl.style.marginBottom= '20px'; 
+        footerRightUl.style.marginBottom= '20px'; 
+        footerLeftUl.style.width= '400px'; 
+        footerRightUl.style.margin= 'auto';
+        footerRightUl.style.float= 'none';
+        footerRightUl.style.width= '200px';
+        document.querySelector('footer').style.height = '150px';
+    }
+    else if(windowWidth()<1300){
+        document.querySelector('footer').attributeStyleMap.clear()
+        footerBottom.attributeStyleMap.clear();
+        footerLeft.attributeStyleMap.clear();
+        footerLeftUl.attributeStyleMap.clear();
+        footerRight.attributeStyleMap.clear();
+        footerRightUl.attributeStyleMap.clear();
+
+        footerBottom.style.paddingTop = '15px';
+
+        footerLeftUl.style.margin= 'auto'; 
+        footerLeftUl.style.width= '400px'; 
+        footerRightUl.style.margin= 'auto';
+        footerRightUl.style.float= 'none';
+        footerRightUl.style.width= '100px';
+    } 
+    else{
+        document.querySelector('footer').attributeStyleMap.clear()
+        footerBottom.attributeStyleMap.clear();
+        footerLeft.attributeStyleMap.clear();
+        footerLeftUl.attributeStyleMap.clear();
+        footerRight.attributeStyleMap.clear();
+        footerRightUl.attributeStyleMap.clear();
+    }
+});
