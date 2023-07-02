@@ -26,6 +26,13 @@ textInput.oninput = function(){
 
 }
 
+document.getElementById('appsBtn').onmouseover = () => {
+    document.getElementById('appsBtnHover').style.display = 'block';
+};
+document.getElementById('appsBtn').onmouseleave = () => {
+    document.getElementById('appsBtnHover').style.display = 'none';
+};
+
 document.querySelector('footer').style.width = windowWidth();
 function windowWidth(){
     var deviceWidth = window.innerWidth;
