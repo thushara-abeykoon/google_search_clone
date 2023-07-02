@@ -1,67 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <link rel="icon" href="resources/google_icon.png" type="image/png" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div><a href="#">Gmail</a></div>
-        <div><a href="#">Images</a></div>
-        <div><img src="resources/apps.png" alt="apps" id="appsBtn"></div>
-        <div id="appsBtnHover"></div>
-        <div id="btnContainer"><button>Sign in</button></div>
+      <div><a href="#">Gmail</a></div>
+      <div><a href="#">Images</a></div>
+      <div><img src="resources/apps.png" alt="apps" id="appsBtn" /></div>
+      <div id="appsBtnHover"></div>
+      <div id="btnContainer"><button>Sign in</button></div>
     </header>
-    <centre>
-        <main>
-            <div><img src="resources/google_image.png" alt="googleImage" id="googleImage"></div>
-            <div id="searchArea">
-                <img src="resources/search_icon.png" alt="SearchIcon" id="searchIcon" class="searchBarIcons">
-                <input type="text" name="textInput" id="textInput">
-                <div id="crossIcons">
-                    <img src="resources/cross.png" alt="crossIcon" id="cross" class="searchBarIcons">
-                    <p id="slash">|</p>
+    <div id="page">
+        <div class="wrapper">
+            <div class="content">
+                <div>
+                    <img src="resources/google_account.png" alt="" width="30px">
+                    <p>Account</p>
                 </div>
-                <img src="resources/google_mic.png" alt="GoogleMicIcon" id="googleMic" class="searchBarIcons">
-                <img src="resources/Google_Lens.png" alt="GoogleLensIcon" class="searchBarIcons">
+                <div>
+                    <img src="resources/google_search_icon.png" alt="" width="35px" style="margin-bottom: 2px;">
+                    <p>Search</p>
+                </div>
+                <div>
+                    <img src="resources/google_maps.png" alt="" width="26.2px">
+                    <p>Maps</p>
+                </div>
+                <div>
+                    <img src="resources/youtube_icon.png" alt="" width="40px" style="margin-bottom: 12px;">
+                    <p>Youtube</p>
+                </div>
+                <div>
+                    <img src="resources/google_play.png" alt="" width="38px">
+                    <p>Play</p>
+                </div>
+                <div>
+                    <img src="resources/google_news.png" alt="" width="46px">
+                    <p>News</p>
+                </div>
+                <div>
+                    <img src="resources/gmail_icon.png" alt="" width="42px" style="margin-bottom: 10px;">
+                    <p>Gmail</p>
+                </div>
+                <div>
+                    <img src="resources/google_meet.png" alt="" width="43px" style="margin-bottom: 8px;">
+                    <p>Meet</p>
+                </div>
+                <div>
+                    <img src="resources/google chat.png" alt="" width="40px">
+                    <p>Chat</p>
+                </div>
+                <div>
+                    <img src="resources/google_contacts.png" alt="" width="35px">
+                    <p>Contacts</p>
+                </div>
+                <div>
+                    <img src="resources/google_drive.png" alt="" width="40px" style="margin-bottom: 5px;">
+                    <p>Drive</p>
+                </div>
+                <div>
+                    <img src="resources/google_calender.png" alt="" width="37px" style="margin-bottom: 3px;">
+                    <p>Calender</p>
+                </div>
+                
+                <div>
+                    <img src="resources/google_translate.png" alt="" width="40px">
+                    <p>Translate</p>
+                </div>
+                <div>
+                    <img src="resources/google_photos.png" alt="" width="40px">
+                    <p>Photos</p>
+                </div>
+                <div>
+                    <img src="resources/google_shopping.png" alt="" width="40px">
+                    <p>Shopping</p>
+                </div>
             </div>
-            <div id="searchByVoice">
-
-            </div>
-            <div>
-                <button class="searchBtn" id="gsearch">Google Search</button>
-                <button class="searchBtn" id="feelLuck">I'm Feeling Lucky</button>
-            </div>
-            <div>
-                <p>Google offered in: <span><a href="#">සිංහල</a></span>  <span><a href="#">தமிழ்</a></span></p>
-            </div>
-        </main>
+        </div>
+    </div>
+    <centre>
+      <main>
+        <div>
+          <img
+            src="resources/google_image.png"
+            alt="googleImage"
+            id="googleImage"
+          />
+        </div>
+        <div id="searchArea">
+          <img
+            src="resources/search_icon.png"
+            alt="SearchIcon"
+            id="searchIcon"
+            class="searchBarIcons"
+          />
+          <input type="text" name="textInput" id="textInput" />
+          <div id="crossIcons">
+            <img
+              src="resources/cross.png"
+              alt="crossIcon"
+              id="cross"
+              class="searchBarIcons"
+            />
+            <p id="slash">|</p>
+          </div>
+          <img
+            src="resources/google_mic.png"
+            alt="GoogleMicIcon"
+            id="googleMic"
+            class="searchBarIcons"
+          />
+          <img
+            src="resources/Google_Lens.png"
+            alt="GoogleLensIcon"
+            class="searchBarIcons"
+          />
+        </div>
+        <div id="searchByVoice"></div>
+        <div>
+          <button class="searchBtn" id="gsearch">Google Search</button>
+          <button class="searchBtn" id="feelLuck">I'm Feeling Lucky</button>
+        </div>
+        <div>
+          <p>
+            Google offered in: <span><a href="#">සිංහල</a></span>
+            <span><a href="#">தமிழ்</a></span>
+          </p>
+        </div>
+      </main>
     </centre>
 
     <footer>
-        <div id="footerTop">Sri Lanka</div>
-        <div id="footerBottom">
-            
-            <div id="footerLeft">
-                <ul id="footerLeftUl">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search Works</a></li>
-                </ul>
-            </div>
-            <div id="footerRight">
-                <ul id="footerRightUl">
-                    <li><a href="">Privacy</a></li> 
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Settings</a></li>
-                </ul>
-            </div>            
+      <div id="footerTop">Sri Lanka</div>
+      <div id="footerBottom">
+        <div id="footerLeft">
+          <ul id="footerLeftUl">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+          </ul>
         </div>
+        <div id="footerRight">
+          <ul id="footerRightUl">
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Settings</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
     <script src="behavior.js"></script>
-</body>
+  </body>
 </html>

@@ -1,259 +1,347 @@
-header{
-    display: flex;
-    padding-right: 20px;
-    width: 250px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-    position: fixed;
-    right: 9px;
+header {
+  display: flex;
+  padding-right: 20px;
+  width: 250px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: fixed;
+  right: 9px;
 }
-header div{
-    margin-right: 12px;
-    padding-top: 10px
-}
-
-header div a{
-    text-decoration: none;
-    color: black;
+header div {
+  margin-right: 12px;
+  padding-top: 10px;
 }
 
-header div a:hover{
-    text-decoration: underline
+header div a {
+  text-decoration: none;
+  color: black;
 }
 
-header div img{
-    margin-top: 2px;
-    margin-left: 15px;
-    margin-right: 5px;
-    width: 19px;
-    opacity: 0.6;
-    cursor: pointer;
+header div a:hover {
+  text-decoration: underline;
 }
 
-header div img:hover{
-    background-color: rgb(245, 243, 243);
+header div img {
+  margin-top: 2px;
+  margin-left: 15px;
+  margin-right: 5px;
+  width: 19px;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-#appsBtnHover{
-    display: none;
-    position:fixed;
-    top: 9px;
-    right: 118px;
-    width: 40px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: rgb(245, 243, 243);;
-    z-index: -5;
+header div img:hover {
+  background-color: rgb(245, 243, 243);
 }
 
-#btnContainer{
-    padding: 4px;
+#appsBtnHover {
+  display: none;
+  position: fixed;
+  top: 9px;
+  right: 118px;
+  width: 40px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(245, 243, 243);
+  z-index: -5;
 }
 
-header div button{
-    
-    width: 95px;
-    height: 35px;
-    background-color: rgb(23, 116, 255);
-    border: 1px solid rgb(0, 102, 255);
-    outline: none;
-    border-radius: 3px;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
+#btnContainer {
+  padding: 4px;
 }
 
-header div button:hover{
-    
-    border: 1px solid rgb(16, 97, 219);
-    background-color: rgb(16, 97, 219);
-    box-shadow: 0px 1px 2px 1px rgb(179, 179, 179);
+header div button {
+  width: 95px;
+  height: 35px;
+  background-color: rgb(23, 116, 255);
+  border: 1px solid rgb(0, 102, 255);
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-header div button:active{
-
-    border: 1px solid rgb(16, 84, 219);
-    background-color: rgb(16, 84, 219);
-
+header div button:hover {
+  border: 1px solid rgb(16, 97, 219);
+  background-color: rgb(16, 97, 219);
+  box-shadow: 0px 1px 2px 1px rgb(179, 179, 179);
 }
 
-
-
-
-
-#googleImage{
-    width: 400px;
+header div button:active {
+  border: 1px solid rgb(16, 84, 219);
+  background-color: rgb(16, 84, 219);
 }
-#searchArea{
-    height: 38px;
-    display: flex;
-    border: 1px solid rgb(223, 223, 223);
-    border-radius: 25px;
-    padding: 3px;
-    padding-right: 10px;
-    margin: auto;
-    width: 500px;
-    margin-bottom: 20px;
+
+#googleImage {
+  width: 400px;
+}
+#searchArea {
+  height: 38px;
+  display: flex;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 25px;
+  padding: 3px;
+  padding-right: 10px;
+  margin: auto;
+  width: 500px;
+  margin-bottom: 20px;
 }
 
 #searchArea:hover {
-    box-shadow: 0px 0px 5px 2px rgb(224, 224, 224);
-  }
-
-input[type=text]{
-    width: 75%;
-    border: none;
-    outline: none;
-    font-size: 16px;
+  box-shadow: 0px 0px 5px 2px rgb(224, 224, 224);
 }
 
-.searchBarIcons{
-    width: 22px;
-    height: 22px;
-    margin: 8px;
-    cursor: pointer;
+input[type="text"] {
+  width: 75%;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
-#cross{
-    width: 15px;
-    height: 15px;
-    margin-top: 12px;
-    cursor: pointer;
+.searchBarIcons {
+  width: 22px;
+  height: 22px;
+  margin: 8px;
+  cursor: pointer;
 }
 
-#slash{
-    display: block;
-    margin-top: auto;
-    font-size: 35px;
-    margin-left:8px ;
-    margin-right: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    color:rgb(223, 223, 223);
+#cross {
+  width: 15px;
+  height: 15px;
+  margin-top: 12px;
+  cursor: pointer;
 }
 
-
-#crossIcons{
-    width: 50px;
-    display: flex;
+#slash {
+  display: block;
+  margin-top: auto;
+  font-size: 35px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(223, 223, 223);
 }
 
-#cross, #slash{
-    display:none;
+#crossIcons {
+  width: 50px;
+  display: flex;
 }
 
-#googleMic{
-    margin-left: 10px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-#searchIcon{
-    width: 15px;
-    height: 15px;
-    margin-top: 12px;
-    
+#cross,
+#slash {
+  display: none;
 }
 
-
+#googleMic {
+  margin-left: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+#searchIcon {
+  width: 15px;
+  height: 15px;
+  margin-top: 12px;
+}
 
 .searchBtn {
-    width: 140px;
-    height: 40px;
-  
-    outline: none;
-    background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(250, 250, 250);
-    border-radius: 5px;
-    font-size: 15px;
-    color: rgb(97, 97, 97);
-    cursor: pointer;
-  }
-  
-  .searchBtn:hover{
-    border: 0.5px solid rgb(224, 224, 224);
-    color: rgb(51, 51, 51);
-  }
-  
-  .searchBtn:active {
-    border: 0.5px solid rgb(56, 92, 255);
-    color: rgb(51, 51, 51);
-  }
-  
-  .searchBtn:focus {
-    border: 0.5px solid rgb(56, 92, 255);
-    color: rgb(51, 51, 51);
-  }
+  width: 140px;
+  height: 40px;
 
-main{
-    text-align: center;
+  outline: none;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(97, 97, 97);
+  cursor: pointer;
 }
 
-main div{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: rgb(80, 80, 80);
+.searchBtn:hover {
+  border: 0.5px solid rgb(224, 224, 224);
+  color: rgb(51, 51, 51);
 }
-main div span{
+
+.searchBtn:active {
+  border: 0.5px solid rgb(56, 92, 255);
+  color: rgb(51, 51, 51);
+}
+
+.searchBtn:focus {
+  border: 0.5px solid rgb(56, 92, 255);
+  color: rgb(51, 51, 51);
+}
+
+main {
+  text-align: center;
+}
+
+main div {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(80, 80, 80);
+}
+main div span {
+  margin: 5px;
+}
+
+main div span a {
+  text-decoration: none;
+}
+
+main div span a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(136, 136, 136);
+  background-color: rgb(241, 241, 241);
+  height: 90px;
+  position: absolute;
+  bottom: 5px;
+  width: 99%;
+}
+
+#footerTop {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 10px 20px;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-right: 20px;
+}
+footer ul li {
+  margin-left: 20px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+#footerBottom {
+  display: flex;
+}
+
+#footerLeft {
+  width: 55%;
+  display: block;
+}
+#footerRight {
+  width: 25%;
+  display: block;
+}
+#footerRightUl {
+  width: 0px;
+  float: right;
+}
+
+#page {
+    display: none;
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  width: 350px;
+  height: 450px;
+  border-radius: 30px;
+  border: 1px solid rgba(233,238,246,255);
+  background-color: rgba(233,238,246,255);
+}
+
+.content {
+  width: 90%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(248,250,253,255);
+  margin: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 40px ;
+  padding-left: 20px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  border: 1px solid rgba(233,238,246,255);
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 2px rgb(163, 163, 163);
+}
+
+#page::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: calc(100% - 20px);
+  top: 10px;
+  right: -1px;
+  width: 5px;
+  background: transparent;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(201,205,211,255);
+  border-right: none;
+  border-left: none;
+  border-radius: 10px;
+}
+
+.wrapper::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 40px;
+}
+
+.wrapper::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 35px;
+}
+
+.content div{
+    background-color: rgba(248,250,253,255);
+    border: 1px solid rgba(248,250,253,255);
+    padding: 0 10px;
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
     margin: 5px;
-}
-
-main div span a{
-    text-decoration: none;
-}
-
-main div span a:hover{
-    text-decoration: underline;
-}
-
-footer{
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    font-size:14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(136, 136, 136);
-    background-color: rgb(241, 241, 241);
-    height: 90px;
-    position: absolute;
-    bottom: 5px;
-    width: 99%;
 }
 
-#footerTop{
-    border-bottom: 1px solid rgb(219, 219, 219);
-    padding: 10px 20px;
+.content div:hover{
+    background-color: rgba(233,238,246,255);
 }
 
-footer ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    padding-right: 20px;
-}
-footer ul li{
-    margin-left: 20px;
-}
-
-footer ul li a{
-    text-decoration: none;
-    color: rgb(136, 136, 136);
-}
-
-footer ul li a:hover{
-    text-decoration: underline;
-}
-
-#footerBottom{
-    display: flex;
-}
-
-#footerLeft{
-    width: 55%;
-    display: block;
-}
-#footerRight{
-    width: 25%;
-    display: block;
-}
-#footerRightUl{
-    width: 0px;
-    float:right;
+.content div p{
+    margin-top: 0;
 }

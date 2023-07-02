@@ -33,6 +33,42 @@ document.getElementById('appsBtn').onmouseleave = () => {
     document.getElementById('appsBtnHover').style.display = 'none';
 };
 
+// document.getElementById('appsBtn').onclick=()=>{
+//     if(document.getElementById('page').style.display === 'block'){
+//         document.getElementById('page').style.display = 'none';
+//     }
+//     else{
+//         document.getElementById('page').style.display = 'block';
+//     }
+// }
+
+
+// Identify the target element
+const targetElement = document.getElementById('appsBtn');
+let clikedElm = false;
+    targetElement.onclick = ()=>{
+        clikedElm = true
+}
+document.addEventListener('click', ()=>{
+    
+    if(clikedElm){
+        if(document.getElementById('page').style.display === 'block'){
+            document.getElementById('page').style.display = 'none';
+        }
+        else{
+            document.getElementById('page').style.display = 'block';
+        }
+        clikedElm=false;
+    }
+    else{
+        if(document.getElementById('page').style.display === 'block'){
+            document.getElementById('page').style.display = 'none';
+        }
+    }
+    
+
+});
+
 document.querySelector('footer').style.width = windowWidth();
 function windowWidth(){
     var deviceWidth = window.innerWidth;
